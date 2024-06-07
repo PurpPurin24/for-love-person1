@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asifa Mentari Said</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+        }
+        .sembunyi {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>حبك حقيقي ولكن وجودك مجرد خیال</p>
+        <p>"mencintaimu Memang nyata tapi memilikimu hanyalah hayalan semata"</p>
+    </div>
+    <audio id="myAudio">
+        <source src="https://audio.jukehost.co.uk/iujGFJb0p3JDBNDlfMt8gbOZNYwiDULC" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var audio = document.getElementById('myAudio');
+            audio.play().catch(function(error) {
+                console.log('Autoplay prevented:', error);
+            });
+        });
+    </script>
+</body>
+</html>
